@@ -1,39 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Freeman&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Color+Emoji&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
-body{padding: 0;
-    margin: 0;
-    background: #9f86c0;
+
+:root{
+    --altura-menu: 40px;
+    --body: #a663cc;
+}
+
+*{padding: 0;
+    margin: 0;}
+
+body{background: var(--body);
     font-family: "DM Sans", sans-serif;}
 
 main{background: #231942;
     display: flex;
-    height: 40px;
+    height: var(--altura-menu);
     justify-content: center;
-    align-items: center;}
+    align-items: center;
+    position: center;}
     
 main h1{font-size: 25px;}
 
 
 #meio{display: flex;}
 
-nav{display: grid;
-    background: #5e548e;
+nav{background: #5e548e;
     width: 50px;
-    padding-bottom: 400px;}
+    height: calc(100vh - var(--altura-menu));
+    position: center;}
 
-nav:hover{width: 110px;
-    padding-left: 30px;}
+nav:hover{width: 100px;
+    padding-left: 15px;}
 
-nav h1,p{padding-left: 7px;}
-
+nav a h1,p{padding-left: 15px;
+    padding-top: 10px;}
 
 
 section{display: flex;}
-section div{background: tan;
+section div{background: purple;
     width: 150px;
     height: 200px;
-    margin: 20px 27px 20px 27px;}
+    margin: 20px 27px 20px 27px;
+    transition: 10ms;}
 
+section div:hover{background: #51228f;;
+    translate: 2px;}
     
 
 section div img{width: 110px;
