@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+
+:root{
+    --BackGroundDark: #4A0477;
+    --Background: #9a60bb;
+    --NavBar: #751daf;
+    --Container: #3c0663;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Background);
+    height: calc(100vh- 8vh); 
+    color: white;  
+    font-family: "Lexend Deca";
+}
+
+#menu{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--NavBar);
+    height: 8vh;
+}
+
+.PaiContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    position: relative;
+    bottom: 3vh;
+}
+
+.container{
+    background-color: var(--Container);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 38vh;
+}
+
+.container h1{
+    position: relative;
+    right: 5vh;
+}
+
+.login{
+    position: relative;
+    bottom: 4vh;
+}
+
+.container p label{
+    display: block;
+}
+
+.container p input{
+    width: 30vw;
+}
+
+.login .botao{
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+}
