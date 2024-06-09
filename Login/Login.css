@@ -46,7 +46,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 40vw;
-  height: 38vh;
+  height: 40vh;
   border-radius: 7px;
   box-shadow: .1875rem 0.125rem 0.125rem black;
 }
@@ -58,9 +58,13 @@ body {
 
 .login {
   position: relative;
-  bottom: 5vh;
+  bottom: 6vh;
 }
 
+.container .login .email{
+    position: relative;
+    bottom: 1vh;
+}
 .container .login p label {
   display: block;
   position: relative;
