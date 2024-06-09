@@ -1,71 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
 
-
-:root{
-    --BackGroundDark: #4A0477;
-    --Background: #9a60bb;
-    --NavBar: #751daf;
-    --Container: #3c0663;
+:root {
+  --BackGroundDark: #4a0477;
+  --Background: #9a60bb;
+  --NavBar: #751daf;
+  --Container: #3c0663;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: var(--Background);
-    height: calc(100vh- 8vh); 
-    color: white;  
-    font-family: "Lexend Deca";
+body {
+  background-color: var(--Background);
+  height: calc(100vh- 8vh);
+  color: white;
+  font-family: "Lexend Deca";
 }
 
-#menu{
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--NavBar);
-    height: 8vh;
+#menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--NavBar);
+  height: 8vh;
 }
 
-.PaiContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 92vh;
-    position: relative;
-    bottom: 3vh;
+#menu .vidinha{
+    width: 12vw;
 }
 
-.container{
-    background-color: var(--Container);
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    width: 40vw;
-    height: 38vh;
+.PaiContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+  position: relative;
+  bottom: 3vh;
 }
 
-.container h1{
-    position: relative;
-    right: 5vh;
+.container {
+  background-color: var(--Container);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+  height: 38vh;
+  border-radius: 7px;
+  box-shadow: .1875rem 0.125rem 0.125rem black;
 }
 
-.login{
-    position: relative;
-    bottom: 4vh;
+.container h1 {
+  position: relative;
+  right: 5vh;
 }
 
-.container p label{
-    display: block;
+.login {
+  position: relative;
+  bottom: 5vh;
 }
 
-.container p input{
-    width: 30vw;
+.container .login p label {
+  display: block;
+  position: relative;
+  top: 1vh;
 }
 
-.login .botao{
-    display: flex;
-    justify-content: center;
-    padding-top: 5vh;
+.container .login p input {
+  width: 30vw;
+  border: 0.1875rem solid var(--Background);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 2px;
+  background-color: var(--Container);
+  position: relative;
+  top: 1vh;
+  color: antiquewhite;
+}
+
+.container .login p input::placeholder {
+  font-weight: bold;
+  color: var(--Background);
+}
+
+.container .login p input:focus {
+  background-color: var(--Container);
+  color: antiquewhite;
+}
+
+.login .botao {
+  display: flex;
+  justify-content: center;
+}
+
+.botao button {
+  position: relative;
+  top: 4vh;
+  height: 5vh;
+  width: 5vw;
+  text-transform: uppercase;
+  color: var(--Background);
+  background-color: var(--Container);
+  border: 0.3125rem solid var(--Background);
+  transition: 0.5s;
+  box-shadow: 0.3125rem 0.125rem 0.125rem black;
+  border-radius: 0.4375rem;
+}
+
+.botao button:hover {
+  translate: 0.0625rem;
+  color: var(--Container);
+  background-color: var(--Background);
+  border: 0.3125rem solid var(--Container);
 }
