@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+:root {
+  --BackGroundDark: #4a0477;
+  --Background: #9a60bb;
+  --NavBar: #751daf;
+  --Container: #3c0663;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Background);
+  height: calc(100vh- 8vh);
+  color: white;
+  font-family: "Lexend Deca";
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--NavBar);
+    height: 8vh;
+    padding-left: .875rem;
+    padding-right: .875rem;
+  }
+  
+  #menu .vidinha {
+    width: 12vw;
+  }
