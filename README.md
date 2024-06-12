@@ -15,15 +15,15 @@ Utilizando as linguagens e tecnologias:
 ## Os wireframes do site são esses:
 #### Login
 Essa é página de login, para cadastrar no site.
-![](/login.jpg)
+![](wireframesimg/login.jpg)
 #### Home
 A página incial para começar a navegação.
-![](/home.jpg)
+![](wireframesimg/home.jpg)
 #### Anos
 A parte que separa os anos e mostra o cotidiano.
-![](/anos.jpg)
+![](wireframesimg/anos.jpg)
 #### Comentários
 Uma parte de comunicação do usuário.
-![](/comentarios.jpg)
+![](wireframesimg/comentarios.jpg)
 
 O site está sendo desenvolvido por **Hiago Gimenez Vieira** e **Luana Rodrigues Brizola**. 
