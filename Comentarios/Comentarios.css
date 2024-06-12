@@ -21,14 +21,14 @@ body {
 }
 
 #menu {
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--NavBar);
-  height: 8vh;
-  padding-left: 0.875rem;
-  padding-right: 0.875rem;
-}
-
-#menu .vidinha {
-  width: 12vw;
-}
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--NavBar);
+    height: 8vh;
+    padding-left: .875rem;
+    padding-right: .875rem;
+  }
+  
+  #menu .vidinha {
+    width: 12vw;
+  }
