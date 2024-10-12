@@ -33,6 +33,10 @@ body {
   width: 12vw;
 }
 
+h1 {
+    text-align: center;
+}
+
 .Paicontainer {
   display: flex;
   flex-wrap: wrap;
