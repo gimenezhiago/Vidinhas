@@ -31,27 +31,40 @@ body {
 
 #menu .vidinha {
   width: 12vw;
+  position: relative;
+  right: 2.7rem;
 }
 
 .Paicontainer {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 1rem;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  gap: 4rem;
 }
 
-.Paicontainer .container {
+.container1-1 {
+  width: 80vw;
   height: 35vh;
-  width: 15vw;
   background: var(--BackGroundDark);
-  padding: 1rem;
+}
+
+.container2 {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.container img {
-  width: 12vw;
-  height: 25vh;
+.container2 img {
+  width: 7vw;
+  height: 13vh;
+}
+
+.container2-1,
+.container2-2 {
+  background: var(--BackGroundDark);
+  width: 30vw;
+  height: 35vh;
+  margin: 0 5.5rem;
 }
