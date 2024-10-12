@@ -18,6 +18,7 @@ body {
   height: calc(100vh- 8vh);
   color: white;
   font-family: "Lexend Deca";
+  font-size: 18px;
 }
 
 #menu {
@@ -88,6 +89,8 @@ body {
   position: relative;
   top: 1vh;
   color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
 .container1 .login p textarea {
