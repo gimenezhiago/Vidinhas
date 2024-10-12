@@ -26,6 +26,7 @@ body {
   justify-content: center;
   background-color: var(--NavBar);
   height: 8vh;
+  align-items: center;
 }
 
 #menu .vidinha {
@@ -135,7 +136,6 @@ body {
   border: 5px solid var(--Container);
 }
 
-/* Media Queries para tornar a página responsiva */
 @media (max-width: 768px) {
   #menu .vidinha {
     width: 20vw;

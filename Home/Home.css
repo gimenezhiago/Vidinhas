@@ -15,7 +15,7 @@
 
 body {
   background-color: var(--Background);
-  height: calc(100vh- 8vh);
+  height: calc(100vh - 8vh);
   color: white;
   font-family: "Lexend Deca";
 }
@@ -23,6 +23,7 @@ body {
 #menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: var(--NavBar);
   height: 8vh;
   padding-left: 0.875rem;
@@ -33,6 +34,38 @@ body {
   width: 12vw;
   position: relative;
   right: 2.7rem;
+}
+
+#nav.hamburger {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.menu-items {
+  display: none; 
+  list-style-type: none;
+  position: absolute;
+  top: 8vh;   
+  left: 0;
+  background-color: var(--NavBar);
+  width: 10vw;
+  text-align: left;
+  padding: 1rem;
+}
+
+.menu-items li {
+  margin: 10px 0;
+}
+
+.menu-items li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.menu-items li a:hover {
+  color: var(--Background);
 }
 
 .Paicontainer {
@@ -71,4 +104,34 @@ body {
   margin: 0 5.5rem;
   border-radius: 7px;
   box-shadow: 3px 2px 2px rgba(8, 8, 8, 0.26);
+}
+
+@media (max-width: 768px) {
+  #menu .vidinha {
+    width: 25vw;
+  }
+
+  .container1-1 {
+    width: 90vw;
+  }
+
+  .container2-1,
+  .container2-2 {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 480px) {
+  #menu .vidinha {
+    width: 30vw;
+  }
+
+  .container1-1 {
+    width: 95vw;
+  }
+
+  .container2-1,
+  .container2-2 {
+    width: 45vw;
+  }
 }
