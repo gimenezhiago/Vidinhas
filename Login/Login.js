@@ -26,7 +26,7 @@ function entrar(event) {
     }
 
     if (email.length > 70) {
-        alert('O email deve ter no máximo 50 caracteres.');
+        alert('O email deve ter no máximo 70 caracteres.');
         return;
     }
     if (usuario.length > 20) {

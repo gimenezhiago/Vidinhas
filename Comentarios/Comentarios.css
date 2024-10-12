@@ -15,7 +15,7 @@
 
 body {
   background-color: var(--Background);
-  height: calc(100vh- 8vh);
+  height: calc(100vh - 8vh); /* Corrigido o cálculo da altura */
   color: white;
   font-family: "Lexend Deca";
   font-size: 18px;
@@ -27,6 +27,9 @@ body {
   background-color: var(--NavBar);
   height: 8vh;
   align-items: center;
+  position: relative;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
 }
 
 #menu .vidinha {
@@ -42,7 +45,7 @@ body {
 }
 
 .menu-items {
-  display: none; 
+  display: none;
   list-style-type: none;
   position: absolute;
   top: 8vh;
@@ -103,6 +106,7 @@ body {
   position: relative;
   bottom: 1vh;
 }
+
 .container1 .login p label {
   display: block;
   position: relative;
