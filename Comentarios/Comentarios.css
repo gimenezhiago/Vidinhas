@@ -35,6 +35,38 @@ body {
   right: 2.7rem;
 }
 
+#nav.hamburger {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.menu-items {
+  display: none; 
+  list-style-type: none;
+  position: absolute;
+  top: 8vh;
+  left: 0;
+  background-color: var(--BackGroundDark);
+  width: 10vw;
+  padding: 1rem;
+  text-align: left;
+}
+
+.menu-items li {
+  margin: 10px 0;
+}
+
+.menu-items li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.menu-items li a:hover {
+  color: var(--Background);
+}
+
 .PaiContainer {
   display: flex;
   flex-direction: column;
