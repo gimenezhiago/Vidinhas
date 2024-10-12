@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comentários</title>
+    <title>Comentário</title>
     <link rel="stylesheet" href="Comentarios.css">
     <link rel="shortcut icon" href="../imagens/Favicon.png" type="image/x-icon">
 </head>
@@ -12,12 +12,13 @@
         <img src="../imagens/Nav.png" alt="Menu" id="nav" class="hamburger">
         <img class="vidinha" src="../imagens/Logo.png" alt="">
         <div></div>
+        <ul id="menu-items" class="menu-items">
+            <li><a href="./Home.html">Home</a></li>
+            <li><a href="../Anos/2023.html">Ano 2023</a></li>
+            <li><a href="../Anos/2024.html">Ano 2024</a></li>
+            <li><a href="../Comentarios/Comentarios.html">Comentário</a></li>
+        </ul>
     </nav>
-    <ul id="menu-items" class="menu-items">
-        <li><a href="./Home.html">Home</a></li>
-        <li><a href="../Anos/2023.html">Ano 2023</a></li>
-        <li><a href="../Comentarios/Comentarios.html">Comentário</a></li>
-    </ul>
     <div class="PaiContainer">
         <div class="container1">
             <h1>Feedback</h1>
@@ -33,12 +34,11 @@
                     <textarea id="mensagem" placeholder="Digite sua mensagem" name="mensagem"></textarea>
                 </p>
                 <p class="botao">
-                    <button type="submit" id="submitBtn">Enviar</button>
+                    <button type="submit" id="Btn">Enviar</button>
                 </p>
             </form>
         </div>
         <div class="container2">
-            <!-- Aqui você pode mostrar as mensagens anteriores -->
         </div>
     </div>
     <script src="Comentarios.js"></script>

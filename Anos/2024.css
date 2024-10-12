@@ -43,12 +43,12 @@ body {
 }
 
 .menu-items {
-  display: none; /* Oculto por padrão */
+  display: none; 
   list-style-type: none;
   position: absolute;
   top: 8vh;
   left: 0;
-  background-color: var(--BackGroundDark);
+  background-color: var(--NavBar);
   width: 10vw;
   padding: 1rem;
   text-align: left;
