@@ -34,4 +34,7 @@ function entrar(event) {
         return;
     }
 
+    document.getElementById('email').value = '';
+    document.getElementById('usuario').value = '';
+
 }
