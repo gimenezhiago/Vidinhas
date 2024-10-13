@@ -2,6 +2,7 @@
     include_once('C:/xampp/htdocs/Vidinhas/config.php');
 
     if (isset($_POST['submit'])) {
+
         $email = $_POST['email'];
         $usuario = $_POST['usuario'];
 
@@ -11,11 +12,11 @@
 
         $resul = mysqli_query($conexao, "INSERT INTO login(email, nomeUsuario) VALUES ('$email','$usuario')");
 
-        /*if ($resul) {
+        if ($resul) {
             echo "Dados inseridos com sucesso!";
         } else {
             echo "Erro ao inserir dados: " . mysqli_error($conexao);
-        }*/
+        }
     }
 ?>
 
@@ -48,7 +49,7 @@
                     <input type="text" placeholder="Digite seu nome de usuário" name="usuario" id="usuario">
                 </p>
                 <p class="botao">
-                    <button type="submit" name="submit" id="btn">Entrar</button>
+                    <button type="submit" name='submit' id="btn"><a href="../Home/Home.html">Entrar</a></button>
                 </p>
             </form>
         </div>

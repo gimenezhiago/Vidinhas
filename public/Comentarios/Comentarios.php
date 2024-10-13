@@ -1,3 +1,24 @@
+<?php
+    include_once('C:/xampp/htdocs/Vidinhas/config.php');
+
+    if (isset($_POST['submit'])) {
+        $usuario = $_POST['usuario'];
+        $email = $_POST['mensagem'];
+
+        $usuario = mysqli_real_escape_string($conexao, $usuario);
+        $mensagem = mysqli_real_escape_string($conexao, $mensagem);
+
+
+        $resul = mysqli_query($conexao, "INSERT INTO comentarios(nomeUsuario, mensagem) VALUES ('$usuario', '$mensagem')");
+
+        if ($resul) {
+            echo "Dados inseridos com sucesso!";
+        } else {
+            echo "Erro ao inserir dados: " . mysqli_error($conexao);
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -34,7 +55,7 @@
                     <textarea id="mensagem" placeholder="Digite sua mensagem" name="mensagem"></textarea>
                 </p>
                 <p class="botao">
-                    <button type="submit" id="btn">Enviar</button>
+                    <button type="submit" id="btn" name="submit">Enviar</button>
                 </p>
             </form>
         </div>

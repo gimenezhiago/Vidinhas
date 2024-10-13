@@ -129,6 +129,17 @@ body {
   border-radius: 7px;
 }
 
+.botao a {
+  text-decoration: none;
+  color: var(--Background);
+}
+
+.botao a:hover {
+  text-decoration: none;
+  color: var(--Container);
+}
+
+
 .botao button:hover {
   translate: 1px;
   color: var(--Container);
