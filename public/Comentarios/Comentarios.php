@@ -2,6 +2,7 @@
     include_once('C:/xampp/htdocs/Vidinhas/config.php');
 
     if (isset($_POST['submit'])) {
+        
         $usuario = $_POST['usuario'];
         $email = $_POST['mensagem'];
 

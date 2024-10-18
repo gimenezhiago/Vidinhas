@@ -39,8 +39,6 @@ function entrar(event) {
         alert('O nome de usuário deve ter no máximo 20 caracteres.');
         return;
     }
-
-    alert('Mensagem enviada!!!');
     
     document.getElementById('mensagem').value = '';
     document.getElementById('usuario').value = '';

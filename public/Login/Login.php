@@ -1,10 +1,10 @@
 <?php
     include_once('C:/xampp/htdocs/Vidinhas/config.php');
 
-        if (isset($_POST['submit'])) {
+    if (isset($_POST['submit'])) {
             
-            $email = $_POST['email'];
-            $usuario = $_POST['usuario'];
+        $email = $_POST['email'];
+        $usuario = $_POST['usuario'];
 
         $email = mysqli_real_escape_string($conexao, $email);
         $usuario = mysqli_real_escape_string($conexao, $usuario);
