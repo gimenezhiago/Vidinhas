@@ -35,7 +35,7 @@ function entrar() {
   }
 
   let form = document.querySelector(".login");
-  console.log(form)
+  console.log(form);
   form.submit();
 
   document.getElementById("email").value = "";

@@ -1,24 +1,41 @@
 <?php
-    include_once('C:/xampp/htdocs/Vidinhas/config.php');
 
-    if (isset($_POST['submit'])) {
-        
-        $usuario = $_POST['usuario'];
-        $email = $_POST['mensagem'];
-
-        $usuario = mysqli_real_escape_string($conexao, $usuario);
-        $mensagem = mysqli_real_escape_string($conexao, $mensagem);
+include_once('C:/xampp/htdocs/Vidinhas/config.php');
 
 
-        $resul = mysqli_query($conexao, "INSERT INTO comentarios(nomeUsuario, mensagem) VALUES ('$usuario', '$mensagem')");
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-        if ($resul) {
-            echo "Dados inseridos com sucesso!";
-        } else {
-            echo "Erro ao inserir dados: " . mysqli_error($conexao);
-        }
+    $usuario = $_POST['usuario'];
+    $mensagem = $_POST['mensagem'];
+
+
+    if (strlen($usuario) < 5 || strlen($usuario) > 50) {
+        echo "O nome de usuário deve ter entre 5 e 50 caracteres.";
+        exit;
     }
+
+    if (strlen($mensagem) < 1 || strlen($mensagem) > 500) {
+        echo "A mensagem deve ter entre 1 e 500 caracteres.";
+        exit;
+    }
+
+
+    $usuario = mysqli_real_escape_string($conexao, $usuario);
+    $mensagem = mysqli_real_escape_string($conexao, $mensagem);
+
+    $sql = "INSERT INTO comentarios (nomeUsuario, mensagem) VALUES ('$usuario', '$mensagem')";
+    mysqli_query($conexao, $sql);
+
+    /*if (mysqli_query($conexao, $sql)) {
+        echo "Dados inseridos com sucesso!";
+    } else {
+        echo "Erro ao inserir dados: " . mysqli_error($conexao);
+    }*/
+}
+
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -44,7 +61,7 @@
     <div class="PaiContainer">
         <div class="container1">
             <h1>Feedback</h1>
-            <form action="#" class="login" id="feedbackForm">
+            <form action="Comentarios.php" method="post" class="login" id="feedbackForm">
                 <p class="usuario">
                     <label for="usuario">Nome do usuário</label>
                     <img src="../imagens/Email.png" alt="Email">

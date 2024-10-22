@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     if (strlen($usuario) < 5 || strlen($usuario) > 50) {
-        echo "O nome de usuário deve ter entre 5 e 20 caracteres.";
+        echo "O nome de usuário deve ter entre 5 e 50 caracteres.";
         exit;
     }
 
