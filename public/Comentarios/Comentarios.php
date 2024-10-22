@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <img class="vidinha" src="../imagens/Logo.png" alt="">
         <div></div>
         <ul id="menu-items" class="menu-items">
-            <li><a href="./Home.html">Home</a></li>
+            <li><a href="../Home.html">Home</a></li>
             <li><a href="../Anos/2023.html">Ano 2023</a></li>
             <li><a href="../Anos/2024.html">Ano 2024</a></li>
             <li><a href="../Comentarios/Comentarios.html">Comentário</a></li>
