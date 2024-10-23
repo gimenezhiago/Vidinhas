@@ -26,11 +26,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $sql = "INSERT INTO comentarios (nomeUsuario, mensagem) VALUES ('$usuario', '$mensagem')";
     mysqli_query($conexao, $sql);
 
-    /*if (mysqli_query($conexao, $sql)) {
+    if (mysqli_query($conexao, $sql)) {
         echo "Dados inseridos com sucesso!";
     } else {
         echo "Erro ao inserir dados: " . mysqli_error($conexao);
-    }*/
+    }
 }
 
 

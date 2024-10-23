@@ -19,15 +19,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $usuario = mysqli_real_escape_string($conexao, $usuario);
 
     $sql = "INSERT INTO login (email, nomeUsuario) VALUES ('$email', '$usuario')";
-
-    mysqli_query($conexao, $sql);
     
     
-    /*if (mysqli_query($conexao, $sql)) {
-        echo "Dados inseridos com sucesso!";
+    if (mysqli_query($conexao, $sql)) {
+        header("Location: ../Home/Home.html");
+        exit();
     } else {
         echo "Erro ao inserir dados: " . mysqli_error($conexao);
-    }*/
+    }
 }
 /*
     mysqli_close($conexao); else {
