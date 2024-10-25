@@ -24,10 +24,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $mensagem = mysqli_real_escape_string($conexao, $mensagem);
 
     $sql = "INSERT INTO comentarios (nomeUsuario, mensagem) VALUES ('$usuario', '$mensagem')";
-    mysqli_query($conexao, $sql);
-
+    
     if (mysqli_query($conexao, $sql)) {
-        echo "Dados inseridos com sucesso!";
+        header("Location: ../Home/Home.html");
+        exit();
     } else {
         echo "Erro ao inserir dados: " . mysqli_error($conexao);
     }
